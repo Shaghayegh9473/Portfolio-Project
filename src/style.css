@@ -1,3 +1,11 @@
+:root {
+  --border-color: yellow;
+  --background-color-gradient: linear-gradient(0deg, #3c3d01, #010101);
+  --background-color: #3c3d01;
+  --header-font-family: "Playfair Display", serif;
+  --paragraph-font-family: "Poppins", sans-serif;
+}
+
 /* h1 {
   font-family: "Playfair Display", serif;
   font-weight: bold;
@@ -14,5 +22,25 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  border: 10px solid yellow;
+  overflow: auto; /* enables scrolling for the body */
+}
+
+.container {
+  position: fixed;
+  border: 10px solid var(--border-color);
+  background: var(--background-color);
+  background: var(--background-color-gradient);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh; /* 100% of the viewport height */
+  width: 100vw; /* 100% of the viewport width */
+  z-index: 9999;
+  /* background: #0a8f03;
+  background: linear-gradient(135deg, #0a8f03, #ecf3e2); */
+}
+
+.content {
+  margin-top: 100px;
+  /* To push the content below the fixed container */
 }
