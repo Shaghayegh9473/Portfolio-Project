@@ -58,16 +58,11 @@ h2 {
   color: #fff;
 }
 
-.content {
-  margin-top: 100px;
-  /* To push the content below the fixed container */
-}
-
 .box {
   display: block;
   margin: 0 auto;
   background: var(--border-color);
-  max-width: 40%;
+  max-width: 35%;
   border-radius: 4px;
 }
 
