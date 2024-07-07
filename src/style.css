@@ -35,6 +35,7 @@ p {
   background: var(--background-color-gradient);
   max-width: 100%;
   margin: 0;
+  text-align: justify;
   /* background: #0a8f03;
   background: linear-gradient(135deg, #0a8f03, #ecf3e2); */
 }
@@ -86,11 +87,20 @@ h2 {
   margin: 15px;
   padding: 20px;
   font-family: var(--paragraph-font-family);
+  text-align: center;
+}
+
+.row p {
+  padding-left: 70px;
 }
 
 .my-pic {
   width: 300px;
   height: auto;
+}
+
+.my-info {
+  padding: 15px 30px;
 }
 
 .box {
@@ -104,4 +114,42 @@ h2 {
 .box p {
   color: #010101;
   font-family: var(--paragraph-font-family);
+  line-height: 2;
+}
+
+@media (max-width: 900px) {
+  .hero h1 {
+    margin: 2px;
+  }
+
+  .hero h1,
+  h2 {
+    font-size: 15px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .row p {
+    padding: 20px;
+    font-family: sans-serif;
+  }
+
+  .my-pic {
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+  }
+
+  .my-info {
+    font-family: sans-serif;
+  }
+
+  .box {
+    font-size: 12px;
+    max-width: 95%;
+    text-align: center;
+    margin-top: -15px;
+  }
 }
