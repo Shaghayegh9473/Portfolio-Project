@@ -29,6 +29,7 @@ p {
 }
 
 .container {
+  z-index: 4; /* Higher z-index to appear above the navbar */
   border: 10px solid var(--border-color);
   background: var(--background-color);
   background: var(--background-color-gradient);
@@ -43,6 +44,11 @@ p {
   /* background: var(--background-color-gradient); */
 }
 
+.navbar-toggler {
+  /* border-color: #fff; */
+  background-color: var(--border-color);
+}
+
 .nav-link-color {
   color: #fff !important;
   margin: 10px 25px;
@@ -52,20 +58,50 @@ p {
   font-weight: bold !important;
 }
 
+.hero {
+  text-align: center;
+  background: #010101;
+  padding: 60px;
+  max-width: 100%;
+}
+
 .hero h1,
 h2 {
   display: inline;
+  line-height: 3;
+}
+
+.hero h1 {
+  color: var(--border-color);
+  margin: 10px;
+}
+
+.hero h2 {
   color: #fff;
+}
+
+.hero p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 15px;
+  padding: 20px;
+  font-family: var(--paragraph-font-family);
+}
+
+.my-pic {
+  width: 300px;
+  height: auto;
 }
 
 .box {
   display: block;
   margin: 0 auto;
   background: var(--border-color);
-  max-width: 35%;
+  max-width: 40%;
   border-radius: 4px;
 }
 
 .box p {
   color: #010101;
+  font-family: var(--paragraph-font-family);
 }
