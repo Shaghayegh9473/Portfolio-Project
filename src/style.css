@@ -1,7 +1,9 @@
 :root {
   --border-color: yellow;
+  --background-hover-color: rgba(255, 255, 0, 0.825);
   --background-color-gradient: linear-gradient(0deg, #3c3d01, #010101);
   --background-color: #3c3d01;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --header-font-family: "Playfair Display", serif;
   --paragraph-font-family: "Poppins", sans-serif;
 }
@@ -24,8 +26,20 @@ body {
   padding: 0;
 }
 
+h4 {
+  color: #fff;
+}
+
 p {
   color: #fff;
+}
+
+label {
+  color: #fff;
+}
+
+#contact-form {
+  margin-top: 120px;
 }
 
 .container {
@@ -100,7 +114,65 @@ h2 {
 }
 
 .my-info {
+  margin-top: 120px;
   padding: 15px 30px;
+}
+
+.sample-sites {
+  text-align: center;
+  font-size: 20px;
+  font-family: var(--paragraph-font-family);
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+
+.apps {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  color: #000;
+  background: var(--border-color);
+  box-shadow: var(--box-shadow);
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 15px;
+  transition: all 200ms ease-in-out;
+}
+
+.apps:hover {
+  background: var(--background-hover-color);
+  cursor: pointer;
+}
+
+.search-button {
+  border-radius: 4px;
+  text-transform: capitalize;
+  border: none;
+  background: var(--border-color);
+  box-shadow: var(--box-shadow);
+  padding: 20px 15px;
+  transition: all 200ms ease-in-out;
+}
+
+.search-button:hover {
+  background: var(--background-hover-color);
+}
+
+.universe {
+  max-width: 100%;
+  border-radius: 5%;
+  margin-left: 30px;
+}
+
+.weather {
+  max-width: 100%;
+  border-radius: 5%;
+}
+
+.yogurt {
+  max-width: 100%;
+  border-radius: 5%;
+  margin-left: 80px;
 }
 
 .box {
