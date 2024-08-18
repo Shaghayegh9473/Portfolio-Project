@@ -53,6 +53,9 @@ textarea {
   border-radius: 4px;
   background-color: #f8f8f8;
   font-size: 16px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  resize: none;
 }
 
 .container {
@@ -84,6 +87,10 @@ textarea {
 
 .active {
   font-weight: bold !important;
+}
+
+.logo {
+  width: 100px;
 }
 
 .hero {
@@ -132,12 +139,11 @@ h2 {
 }
 
 .contact-me {
-  margin-top: 120px;
-  margin-bottom: 20px;
+  margin: 130px 400px 20px 380px;
   background-color: #f2f2f2;
   padding: 20px;
   border-radius: 5px;
-  margin: 130px 90px 20px 90px;
+  width: 540px;
 }
 
 .sample-sites {
@@ -196,7 +202,9 @@ h2 {
   border: none;
   background: var(--border-color);
   box-shadow: var(--box-shadow);
-  padding: 20px 15px;
+  padding: 14px 28px;
+  display: block;
+  margin: 0 auto;
   transition: all 200ms ease-in-out;
 }
 
@@ -244,7 +252,38 @@ footer .sociaL-media a {
   padding: 30px;
 }
 
-@media (max-width: 580px) {
+@media (max-width: 1200px) {
+  h4 {
+    text-align: center;
+  }
+
+  input::placeholder {
+    font-size: 12px;
+  }
+
+  textarea::placeholder {
+    font-size: 12px;
+  }
+
+  input[type="search"],
+  input[type="email"],
+  textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  button[type="submit"] {
+    width: 50%;
+    padding: 10px;
+  }
+
+  .logo {
+    width: 70px;
+  }
+  .hero {
+    padding-bottom: 0;
+  }
+
   .hero h1 {
     margin: 2px;
   }
@@ -280,4 +319,75 @@ footer .sociaL-media a {
     text-align: center;
     margin-top: -15px;
   }
+
+  .universe {
+    max-width: 100%;
+    border-radius: 5%;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .projet p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .forecast {
+    margin-left: 8%;
+  }
+
+  .projet {
+    padding-top: 0;
+  }
+
+  .weather {
+    margin-top: 60px;
+  }
+
+  .yogurt {
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .brief-yogurt {
+    margin-left: 10px;
+  }
+
+  .yog-info {
+    margin-left: 15%;
+  }
+
+  .contact-me {
+    max-width: 250px;
+    margin: 115px auto 20px auto;
+    padding: 20px;
+  }
 }
+
+/* @media (min-width: 800px) { 
+  .brief-universe {
+    padding-left: 10px;
+  }
+
+  .brief-universe p {
+    padding-left: 0;
+  }
+
+  .weather {
+    margin-top: 0;
+  }
+
+  .brief-yogurt {
+    margin-left: -80px;
+    padding-top: 90px;
+    padding-right: 40px;
+    padding-left: 80px;
+  }
+
+  .yogurt {
+    margin-left: 20px;
+  }
+
+  .yog-info {
+    margin-left: 6%;
+  }
+}*/
